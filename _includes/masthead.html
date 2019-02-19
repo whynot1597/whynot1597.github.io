@@ -28,11 +28,12 @@
         </a>
       </div>
     {% endif %}
-    {% octicon file-pdf height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:file-pdf %}
-    <a href="https://whynot1597.github.io/Resume.pdf" {% if site.style == 'dark' %}class="text-white"{% endif %}>
+    <div class="{{ metadata_styles }}">
+      {% octicon file-pdf height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:file-pdf %}
+      <a href="https://whynot1597.github.io/Resume.pdf" {% if site.style == 'dark' %}class="text-white"{% endif %}>
           Resume
-        </a>
-    
+      </a>
+    </div>
     {% if user.location %}
       <div class="{{ metadata_styles }} {% if site.style == 'dark' %}text-white{% endif %}">
         {% octicon location height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:Location %}
