@@ -28,12 +28,14 @@
         </a>
       </div>
     {% endif %}
-    <div class="{{ metadata_styles }}">
-      {% octicon link-external height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:link-external %}
-      <a href="https://www.linkedin.com/in/ja-goldberg/" target="_blank" {% if site.style == 'dark' %}class="text-white"{% endif %}>
+    {% if user.link %}
+      <div class="{{ metadata_styles }}">
+        {% octicon link-external height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:link-external %}
+        <a href="https://www.linkedin.com/in/ja-goldberg/" target="_blank" {% if site.style == 'dark' %}class="text-white"{% endif %}>
           LinkedIn Profile
-      </a>
-    </div>
+        </a>
+      </div>
+    {% endif %}
     <div class="{{ metadata_styles }}">
       {% octicon file-pdf height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:file-pdf %}
       <a href="https://whynot1597.github.io/Resume.pdf" target="_blank" {% if site.style == 'dark' %}class="text-white"{% endif %}>
