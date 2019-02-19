@@ -30,13 +30,13 @@
     {% endif %}
     <div class="{{ metadata_styles }}">
       {% octicon link-external height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:link-external %}
-      <a href="https://www.linkedin.com/in/ja-goldberg/" {% if site.style == 'dark' %}class="text-white"{% endif %}>
+      <a href="https://www.linkedin.com/in/ja-goldberg/" target="_blank" {% if site.style == 'dark' %}class="text-white"{% endif %}>
           LinkedIn Profile
       </a>
     </div>
     <div class="{{ metadata_styles }}">
       {% octicon file-pdf height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:file-pdf %}
-      <a href="https://whynot1597.github.io/Resume.pdf" {% if site.style == 'dark' %}class="text-white"{% endif %}>
+      <a href="https://whynot1597.github.io/Resume.pdf" target="_blank" {% if site.style == 'dark' %}class="text-white"{% endif %}>
           Resume
       </a>
     </div>
