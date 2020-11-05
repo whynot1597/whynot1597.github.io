@@ -26,6 +26,7 @@ projects:
     projects:
       - Disney_Ride_Tacker
   include:
+    - Disney_Ride_Tracker
     - alvinlai808/Synth-Trainer
     - pawvascript/pawvascript
 
