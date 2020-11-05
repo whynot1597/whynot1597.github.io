@@ -16,6 +16,23 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      
+projects:
+  sort_by: pushed
+  limit: 9
+  exclude:
+    archived: true
+    forks: false
+    projects:
+      - personal-website
+      - app-version-history
+      - issue-mcve
+      - poi-android
+  include:
+    - Triple-T/gradle-play-publisher
+    - firebase/FirebaseUI-Android
+    - googlesamples/easypermissions
+    - yshrsmz/LicenseAdapter
 
 topics:
   - name: CSS
