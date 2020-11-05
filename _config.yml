@@ -24,7 +24,6 @@ projects:
     archived: true
     forks: false
     projects:
-      - CMSI_281
   include:
     - whynot1597/Disney_Ride_Tracker
     - alvinlai808/Synth-Trainer
