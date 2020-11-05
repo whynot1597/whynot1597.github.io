@@ -24,7 +24,7 @@ projects:
     archived: true
     forks: false
     projects:
-      - personal-website
+      - Disney_Ride_Tacker
       - app-version-history
       - issue-mcve
       - poi-android
