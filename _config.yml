@@ -25,14 +25,9 @@ projects:
     forks: false
     projects:
       - Disney_Ride_Tacker
-      - app-version-history
-      - issue-mcve
-      - poi-android
   include:
-    - Triple-T/gradle-play-publisher
-    - firebase/FirebaseUI-Android
-    - googlesamples/easypermissions
-    - yshrsmz/LicenseAdapter
+    - alvinlai808/Synth-Trainer
+    - pawvascript/pawvascript
 
 topics:
   - name: CSS
