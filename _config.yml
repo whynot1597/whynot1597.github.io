@@ -25,7 +25,6 @@ projects:
     forks: false
     projects:
   include:
-    - whynot1597/Disney_Ride_Tracker
     - alvinlai808/Synth-Trainer
     - pawvascript/pawvascript
 
