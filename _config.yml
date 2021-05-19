@@ -25,8 +25,10 @@ projects:
     forks: false
     projects:
   include:
-    - alvinlai808/Synth-Trainer
+    - synth-trainer/synth-trainer
     - pawvascript/pawvascript
+    - lmu-cmsi432-spring2021/lmu-cmsi432-spring2021-py3final-jjfinalproj
+
 
 topics:
   - name: React
