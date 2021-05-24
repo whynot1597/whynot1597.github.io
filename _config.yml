@@ -27,7 +27,7 @@ projects:
   include:
     - synth-trainer/synth-trainer
     - pawvascript/pawvascript
-    - lmu-cmsi432-spring2021/lmu-cmsi432-spring2021-py3final-jjfinalproj
+    - whynot1597/College-Portfolio
 
 
 topics:
