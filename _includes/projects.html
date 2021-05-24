@@ -4,6 +4,7 @@
   <link href="https://api.github.com" rel="preconnect" crossorigin>
   <script>
       async function loadRepo(path) {
+          console.log(path);
           const response = await fetch(`https://api.github.com/repos/${path}`);
           const repo = await response.json();
 
