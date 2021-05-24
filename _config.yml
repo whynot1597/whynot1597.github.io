@@ -27,8 +27,7 @@ projects:
   include:
     - synth-trainer/synth-trainer
     - pawvascript/pawvascript
-    - pawvascript/pawvascript
-#     - College-Portfolio
+    - whynot1597/College-Portfolio
 
 
 topics:
