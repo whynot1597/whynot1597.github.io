@@ -12,15 +12,15 @@
           document.getElementById(`${path}-url`).innerHTML += repo.name;
           document.getElementById(`${path}-desc`).innerHTML = repo.description;
 
-          if (repo.language) {
-              document.getElementById(`${path}-lang`).innerHTML += repo.language;
+//           if (repo.language) {
+//               document.getElementById(`${path}-lang`).innerHTML += repo.language;
 
-              const lang = {{ site.data.colors | jsonify }}[repo.language];
-              document.getElementById(`${path}-lang-wrapper`).href = lang.url;
-              document.getElementById(`${path}-lang-style`).style.backgroundColor = lang.color;
-          } else {
+//               const lang = {{ site.data.colors | jsonify }}[repo.language];
+//               document.getElementById(`${path}-lang-wrapper`).href = lang.url;
+//               document.getElementById(`${path}-lang-style`).style.backgroundColor = lang.color;
+//           } else {
               document.getElementById(`${path}-lang-wrapper`).remove();
-          }
+//           }
 
           document.getElementById(`${path}-stargazers`).href = repo.stargazers_url;
           document.getElementById(`${path}-stargazers`).innerHTML += repo.stargazers_count;
