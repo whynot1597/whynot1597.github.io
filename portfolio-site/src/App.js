@@ -32,7 +32,8 @@ const useStyles = makeStyles((theme) => ({
   card: {
     maxWidth: theme.spacing(40),
     color: theme.palette.text.primary,
-    background: "linear-gradient(to right, #e1eec3, #f05053)",
+    background:
+      "linear-gradient(315deg, hsla(135, 100%, 50%, 1) 0%, hsla(278, 98%, 49%, 1) 100%)",
   },
 
   cardText: {
