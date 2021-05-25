@@ -64,7 +64,7 @@ export default function ProfileDrawer(props) {
         <ListItem key="bio">
           <Typography variant="h4">{bio}</Typography>
         </ListItem>
-        <ListItem button key="github" href={htmlURL}>
+        <ListItemLink button key="github" href={htmlURL}>
           <ListItemIcon>
             <GitHub />
           </ListItemIcon>
@@ -72,8 +72,8 @@ export default function ProfileDrawer(props) {
             primary={"@" + login}
             primaryTypographyProps={{ variant: "button" }}
           />
-        </ListItem>
-        <ListItem button key="linkedin" href={blog}>
+        </ListItemLink>
+        <ListItemLink button key="linkedin" href={blog}>
           <ListItemIcon>
             <LinkedIn />
           </ListItemIcon>
@@ -81,7 +81,7 @@ export default function ProfileDrawer(props) {
             primary="LinkedIn Profile"
             primaryTypographyProps={{ variant: "button" }}
           />
-        </ListItem>
+        </ListItemLink>
         <ListItemLink
           button
           key="resume"
