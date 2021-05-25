@@ -1,5 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { GitHub, LinkedIn, Description, LocationOn } from "@material-ui/icons";
+import {
+  Email,
+  GitHub,
+  LinkedIn,
+  Description,
+  LocationOn,
+} from "@material-ui/icons";
 import {
   Avatar,
   List,
@@ -62,6 +68,15 @@ export default function ProfileDrawer(props) {
         <ListItem key="bio">
           <Typography variant="h4">{bio}</Typography>
         </ListItem>
+        <ListItemLink button key="email" href="mailto:ja_goldberg@yahoo.com">
+          <ListItemIcon>
+            <Email />
+          </ListItemIcon>
+          <ListItemText
+            primary="ja_goldberg@yahoo.com"
+            primaryTypographyProps={{ variant: "button" }}
+          />
+        </ListItemLink>
         <ListItemLink button key="github" href={htmlURL}>
           <ListItemIcon>
             <GitHub />
