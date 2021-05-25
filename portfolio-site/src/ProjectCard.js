@@ -8,6 +8,7 @@ import {
 } from "@material-ui/core";
 import { Link } from "@material-ui/icons";
 import FolderIcon from "@material-ui/icons/Folder";
+import { green } from "@material-ui/core/colors";
 import React from "react";
 import { motion } from "framer-motion";
 
@@ -42,7 +43,7 @@ function ProjectCard(props) {
           </Typography>
           <CardActions>
             <IconButton aria-label="open repo">
-              <Link color="primary" />
+              <Link color="secondary" />
             </IconButton>
           </CardActions>
         </Card>
