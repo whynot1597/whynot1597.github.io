@@ -4,7 +4,6 @@ import ProjectCard from "./ProjectCard";
 import projectDetails from "./project-details";
 
 function StarredProjects(props) {
-  const classes = props.classes;
   const [isLoaded, setIsLoaded] = useState(false);
   const [projects, setProjects] = useState([]);
 

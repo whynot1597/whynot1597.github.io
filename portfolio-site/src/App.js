@@ -15,6 +15,7 @@ const darkTheme = createMuiTheme({
   },
 });
 
+//eslint-disable-next-line
 const lightTheme = createMuiTheme({
   palette: {
     type: "light",
@@ -25,16 +26,18 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
     height: "100%",
+    alignItems: "center",
+    padding: theme.spacing(20),
   },
   card: {
-    minWidth: theme.spacing(20),
     maxWidth: theme.spacing(40),
     color: theme.palette.text.primary,
     background: theme.palette.background.paper,
   },
   cardText: {
     color: theme.palette.text.primary,
-    padding: theme.spacing(1),
+    paddingLeft: theme.spacing(1),
+    paddingRight: theme.spacing(1),
     textAlign: "left",
     fontSize: 15,
   },

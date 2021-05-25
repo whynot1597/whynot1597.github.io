@@ -20,7 +20,6 @@ export default function ProfileDrawer(props) {
   const [login, setLogin] = useState("");
   const [blog, setBlog] = useState("");
   const [location, setLocation] = useState("");
-  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
     fetch("https://api.github.com/users/whynot1597", {
@@ -38,7 +37,6 @@ export default function ProfileDrawer(props) {
         setLogin(response.login);
         setBlog(response.blog);
         setLocation(response.location);
-        setIsLoaded(true);
       })
       .catch((error) => console.error(error));
   });
@@ -85,7 +83,7 @@ export default function ProfileDrawer(props) {
         <ListItemLink
           button
           key="resume"
-          href="https://whynot1597.github.io/Jeremy_Goldberg_Resume.pdf"
+          href="https://github.com/whynot1597/College-Portfolio/blob/909bef77f75fde4c38bfbc58eb8bb4025245207f/Jeremy_Goldberg_Resume.pdf"
         >
           <ListItemIcon>
             <Description />
