@@ -5,7 +5,7 @@ const projectDetails = [
       "This was a group project where we created a Pacman-like agent using approximate q-learning with a feature-based representation. This agent was completely designed by this group. My contribution consisted of implementing the features of the agent and updating its history.",
   },
   {
-    name: "Compilier",
+    name: "Compiler",
     description:
       "This was a group project where we designed a computer langauge from scratch. We wrote a grammer, constructed abstract syntax trees, performed semantic analysis, and optimized the resulting code. I contributed to all of these sections in varying capacities. Larger sections of my work are located in the grammar and optimization sections.",
   },
