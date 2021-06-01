@@ -27,7 +27,6 @@ function StarredProjects(props) {
             );
             folder.description = project[0].description;
           });
-          console.log(folders);
           setProjects(folders);
           setIsLoaded(true);
         })
