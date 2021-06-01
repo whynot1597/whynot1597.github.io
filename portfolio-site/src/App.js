@@ -7,7 +7,7 @@ import {
 } from "@material-ui/core/styles";
 import "./App.css";
 import StarredProjects from "./StarredProjects";
-import { Paper } from "@material-ui/core";
+import { CssBaseline } from "@material-ui/core";
 
 const darkTheme = createMuiTheme({
   palette: {
@@ -24,10 +24,8 @@ const lightTheme = createMuiTheme({
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    padding: theme.spacing(2),
     display: "flex",
-    height: "100%",
-    alignItems: "center",
-    padding: theme.spacing(20),
   },
   card: {
     maxWidth: theme.spacing(40),
@@ -55,9 +53,6 @@ const useStyles = makeStyles((theme) => ({
     width: theme.spacing(20),
     height: theme.spacing(20),
   },
-  content: {
-    flexGrow: 1,
-  },
   background: {
     minHeight: "100vh",
   },
@@ -68,11 +63,10 @@ function App() {
 
   return (
     <ThemeProvider theme={darkTheme}>
-      <div className={classes.background}>
-        <Paper className={classes.root}>
-          <ProfileDrawer classes={classes} />
-          <StarredProjects classes={classes} />
-        </Paper>
+      <CssBaseline />
+      <div className={classes.root}>
+        <ProfileDrawer classes={classes} />
+        <StarredProjects classes={classes} />
       </div>
     </ThemeProvider>
   );
